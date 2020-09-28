@@ -1,0 +1,133 @@
+/* AUTOR: J' MANUEL C' MENDOZA */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+* {
+  margin: 0%;
+}
+
+body {
+  color: #f4f4f4;
+  background: #525659;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* VARIABLES */
+/* Variables */
+/* Fuentes */
+/* Colores */
+/* MIXING */
+/* PAGES */
+/* NavBar */
+nav .Logo a {
+  color: #F4f4f4;
+  margin: 0px;
+  padding: 0px;
+}
+nav .Logo a img {
+  width: 80%;
+}
+nav .navbar-nav {
+  margin-left: 30px;
+  display: grid;
+  grid-template: 1fr/repeat(4, 1fr);
+  grid-gap: 4pc;
+}
+nav .navbar-nav .nav-link {
+  padding: 0px;
+  color: #F4f4f4;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3em;
+}
+nav .navbar-nav .nav-link .fa-home {
+  color: #DBB237;
+  margin: 2px;
+}
+nav .navbar-nav .nav-link .fa-download {
+  color: #DBB237;
+  margin: 2px;
+}
+nav .navbar-nav .nav-link .fa-wallet {
+  color: #DBB237;
+  margin: 2px;
+}
+nav .navbar-nav .nav-link .fa-clipboard-check {
+  color: #DBB237;
+  margin: 2px;
+}
+nav .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: #DBB237;
+}
+
+/* Marco */
+.marco {
+  box-shadow: black 0px 1px 5px;
+  width: 82%;
+  background: #2b2f36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MarcoDO */
+.marcoDo {
+  border-radius: 20px;
+  width: 96%;
+  background: #202124;
+}
+.marcoDo .Hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 14%;
+  padding-left: 5%;
+}
+.marcoDo .Hero .hero_txt h1 {
+  color: #DBB237;
+  font-size: 3.5em !important;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  margin: 0%;
+}
+.marcoDo .Hero .hero_txt p {
+  padding-top: 3%;
+  font-size: 1.7em;
+  margin: 0%;
+  font-family: sans-serif;
+}
+.marcoDo .Hero .hero_txt input {
+  margin-top: 4%;
+  width: 59%;
+  height: 2em;
+  color: #202124;
+  background: #DBB237;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.62em;
+  border-radius: 5px;
+  border: none;
+}
+.marcoDo .Hero .hero_txt .hero_iconos {
+  display: flex;
+  margin-top: 1.5%;
+  margin-left: 10%;
+  width: 40%;
+  justify-content: space-evenly;
+}
+.marcoDo .Hero .hero_txt .hero_iconos i {
+  font-size: 1.5em;
+  color: #52555a;
+}
+.marcoDo .Hero .hero_img img {
+  max-width: 85%;
+  animation: gif 0.8s infinite alternate;
+}
+@keyframes gif {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

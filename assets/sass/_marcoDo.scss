@@ -1,0 +1,70 @@
+/* MarcoDO */
+.marcoDo{
+    border-radius: 20px;
+    width: 96%;
+    background: rgb(32, 33, 36);
+
+    .Hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 14%;
+        padding-left: 5%;
+
+        .hero_txt{
+            
+            h1{
+                color:$Dorado;
+                font-size: 3.5em !important;
+                font-family: $Pesada;
+                font-weight: bold;
+                margin: 0%;
+            }
+            p{
+                padding-top: 3%;
+                font-size: 1.7em;
+                margin: 0%;
+                font-family: sans-serif;
+            }
+
+            input{
+                margin-top: 4%;
+                width: 59%;
+                height: 2em;
+                color:  rgb(32, 33, 36);
+                background: $Dorado;
+                font-family: $Pesada;
+                font-weight: bold;
+                font-size: 1.62em;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .hero_iconos{
+                display: flex;
+                margin-top: 1.5%;
+                margin-left: 10%;
+                width: 40%;
+                justify-content: space-evenly;
+                
+                i{
+                    font-size: 1.5em;
+                    color: #52555a;
+                }
+            }
+        }
+        .hero_img{
+            img{
+                max-width: 85%;
+                animation: gif 0.8s infinite alternate;
+            }
+            @keyframes gif {
+                from{
+                    transform: scale(1);
+                }
+                to{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

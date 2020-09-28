@@ -1,0 +1,20 @@
+/* AUTOR: J' MANUEL C' MENDOZA */
+*{
+    margin: 0%;
+}
+body{
+    color: #f4f4f4;
+    background: #525659;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/* VARIABLES */
+@import "_variables";
+@import "_mixing";
+
+/* PAGES */
+@import "_navbar";
+@import "_marco";
+@import "marcoDo";
