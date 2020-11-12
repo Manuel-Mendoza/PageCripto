@@ -20,12 +20,13 @@
         border-top: none;
         border-radius: 0% 0% 100% 100%;
         background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+        background-position: center;
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        div{
+        /* div{
             background:rgba($color: $Dorado, $alpha: .2);
             border-radius: 50%;
             width: 50%;
@@ -34,6 +35,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        } */
     }
 }
