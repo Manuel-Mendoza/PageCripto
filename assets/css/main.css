@@ -158,14 +158,4 @@ nav .navbar-nav .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* div{
-      background:rgba($color: $Dorado, $alpha: .2);
-      border-radius: 50%;
-      width: 50%;
-      height: 70%;
-      margin: auto auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  } */
 }
