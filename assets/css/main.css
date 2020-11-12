@@ -152,8 +152,8 @@ nav .navbar-nav .nav-link:hover {
   height: 110vh;
   border-top: none;
   border-radius: 0% 0% 100% 100%;
-  background: url("/img/img/white-outline-world-map-vector.jpg") no-repeat;
-  background-size: 100%;
+  background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,4 +164,7 @@ nav .navbar-nav .nav-link:hover {
   width: 50%;
   height: 70%;
   margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
