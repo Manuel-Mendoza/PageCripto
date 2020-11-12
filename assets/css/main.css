@@ -198,3 +198,8 @@ nav .navbar-nav .nav-link:hover {
   -ms-grid-column-span: 2;
   grid-area: tres;
 }
+
+/* Parte 4 */
+.parte4 strong {
+  text-transform: capitalize;
+}
