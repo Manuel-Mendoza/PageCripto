@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
 * {
   margin: 0%;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -142,10 +144,12 @@ nav .navbar-nav .nav-link:hover {
   font-family: "Noto Sans", sans-serif;
   color: rgba(128, 128, 128, 0.1);
   margin-bottom: -46px;
+  text-transform: uppercase;
 }
 .Parte2 .h1_secundario {
   font-family: "Noto Sans", sans-serif;
   font-size: 3em;
+  text-transform: uppercase;
 }
 .Parte2 figure {
   width: 100%;
@@ -158,4 +162,39 @@ nav .navbar-nav .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Parte 3 */
+.parte3 .parte3_contenido {
+  background: url("/img/img/Rectangulos.png") no-repeat;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: ". . one one ." ". two two . ." ". . tres tres .";
+}
+.parte3 .parte3_contenido article {
+  margin-top: 5%;
+}
+.parte3 .parte3_contenido article h3 {
+  color: #DBB237;
+}
+.parte3 .parte3_contenido article p {
+  text-align: start;
+}
+.parte3 .parte3_contenido .article_one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: one;
+}
+.parte3 .parte3_contenido .article_two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: two;
+}
+.parte3 .parte3_contenido .article_tres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: tres;
 }

@@ -1,6 +1,7 @@
 /* AUTOR: J' MANUEL C' MENDOZA */
 *{
     margin: 0%;
+    user-select: none;
 }
 body{
     color: #f4f4f4;
@@ -19,3 +20,4 @@ body{
 @import "_marco";
 @import "_marcoDo";
 @import "_Parte2";
+@import "_parte3";
