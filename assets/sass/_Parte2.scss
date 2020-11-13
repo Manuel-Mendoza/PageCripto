@@ -4,7 +4,7 @@
     text-align: center;
 
     .h1_principal{
-        font-size: 5em;
+        font-size: 4em;
         font-family: $Pesada;
         color: rgba($color: grey, $alpha: .1);
         margin-bottom: -46px;
@@ -28,5 +28,10 @@
         justify-content: center;
         align-items: center;
 
+        div{
+            img{
+                max-width: 80%;
+            }
+        }
     }
 }

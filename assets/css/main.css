@@ -140,7 +140,7 @@ nav .navbar-nav .nav-link:hover {
   text-align: center;
 }
 .Parte2 .h1_principal {
-  font-size: 5em;
+  font-size: 4em;
   font-family: "Noto Sans", sans-serif;
   color: rgba(128, 128, 128, 0.1);
   margin-bottom: -46px;
@@ -162,6 +162,9 @@ nav .navbar-nav .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Parte2 figure div img {
+  max-width: 80%;
 }
 
 /* Parte 3 */
@@ -217,7 +220,7 @@ nav .navbar-nav .nav-link:hover {
   background: #1a1a1a;
   margin-top: 5%;
   border-radius: 0 0 50% 50%;
-  height: 90vh;
+  height: 100vh;
 }
 ._Descargas ._Descargas_app {
   margin-top: 5%;
