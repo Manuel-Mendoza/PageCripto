@@ -1,0 +1,23 @@
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ._iconos_footer{
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        i{
+            font-size: 2em;
+        }
+    }
+    p{
+        text-transform: uppercase;
+        color: grey;
+        font-size: 1.3em;
+    }
+}

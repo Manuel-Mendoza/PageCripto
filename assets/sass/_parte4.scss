@@ -3,4 +3,12 @@
     strong{
         text-transform: capitalize;
     }
+    ._img{
+        margin: 2% 10%;
+        border: 2.5px solid grey;
+        img{
+                padding: 8%;
+                max-width: 100%;
+        }
+    }
 }

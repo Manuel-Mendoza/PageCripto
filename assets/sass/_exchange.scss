@@ -1,0 +1,17 @@
+/* Exchange */
+._exchange{
+    margin-top: 5%;
+    ._exchange_square{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            width: 100%;
+            img{
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/* Descargas */
+._Descargas{
+    background: #1a1a1a;
+    margin-top: 5%;
+    border-radius: 0 0 50% 50%;
+    height: 90vh;
+    
+    ._Descargas_app{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #2b2f36;
+                border-radius: 30px;
+                height: 2em;
+                width: 8em;
+            }
+            p:last-child{
+                width: 14em;
+            }
+            i{
+                margin-bottom: 5%;
+                color: $Dorado;
+                font-size: 8em;
+            }
+        }
+    }
+}
