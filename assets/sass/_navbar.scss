@@ -15,27 +15,22 @@ nav{
     .navbar-nav{
         margin-left: 30px;
         display: grid;
-        grid-template: 1fr / repeat(4,1fr);
-        grid-gap: 4pc;
+        grid-template: 1fr / repeat(5,1fr);
+        grid-gap: 3pc;
 
         .nav-link{
             padding: 0px;
             color:$Blanco;
             font-family: $Lite;
-            font-size: 1.3em;
+            font-size: 1.2em;
 
             
-            .fa-home{
-                @include iconos;
-            }
-            .fa-download{
-                @include iconos;
-            }
-            .fa-wallet{
-                @include iconos;
-            }
-            .fa-clipboard-check{
-                @include iconos;
+            .fa-home,
+            .fa-download,
+            .fa-wallet,
+            .fa-clipboard-check,
+            .fa-sign-in-alt{
+                @include iconos
             }
         }
         .nav-link:hover{

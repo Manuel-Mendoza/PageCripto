@@ -33,28 +33,20 @@ nav .Logo a img {
 nav .navbar-nav {
   margin-left: 30px;
   display: grid;
-  grid-template: 1fr/repeat(4, 1fr);
-  grid-gap: 4pc;
+  grid-template: 1fr/repeat(5, 1fr);
+  grid-gap: 3pc;
 }
 nav .navbar-nav .nav-link {
   padding: 0px;
   color: #F4f4f4;
   font-family: "Quicksand", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
-nav .navbar-nav .nav-link .fa-home {
-  color: #DBB237;
-  margin: 2px;
-}
-nav .navbar-nav .nav-link .fa-download {
-  color: #DBB237;
-  margin: 2px;
-}
-nav .navbar-nav .nav-link .fa-wallet {
-  color: #DBB237;
-  margin: 2px;
-}
-nav .navbar-nav .nav-link .fa-clipboard-check {
+nav .navbar-nav .nav-link .fa-home,
+nav .navbar-nav .nav-link .fa-download,
+nav .navbar-nav .nav-link .fa-wallet,
+nav .navbar-nav .nav-link .fa-clipboard-check,
+nav .navbar-nav .nav-link .fa-sign-in-alt {
   color: #DBB237;
   margin: 2px;
 }
