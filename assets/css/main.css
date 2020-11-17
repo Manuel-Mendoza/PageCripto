@@ -318,6 +318,7 @@ footer p {
 
 /* Login */
 .Register_login figure {
+  height: 100vh;
   display: flex;
   justify-content: center;
   background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
@@ -326,7 +327,7 @@ footer p {
   padding: 5% 0%;
 }
 .Register_login figure .login {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -365,7 +366,7 @@ footer p {
   background: #2b2f36;
 }
 .Register_login figure .register {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
