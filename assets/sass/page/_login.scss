@@ -1,0 +1,58 @@
+/* Login */
+.Register_login{
+    figure{
+        display: flex;
+        justify-content: center;
+        background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 5% 0%;
+        .login{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            padding: 5% 0%;
+            border-radius: 20px;
+            background: #181818;
+            
+            button{
+                background: $Dorado;
+                padding: 2%;
+                width: 30%;
+                border-radius: 20px;
+                font-weight: bold;
+                color: $fondo_marco;
+            }
+            small a{
+                text-decoration: none;
+                color: white;
+            }
+            label{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5%;
+                input{
+                    padding: 0% 5%;
+                    width: 60%;
+                    height: 3em;
+                    border-radius: 30px;
+                    border: none;
+                    color: white;
+                    background: $fondo_marco;
+                }
+            }
+        }
+        .register{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}

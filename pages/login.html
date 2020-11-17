@@ -23,23 +23,50 @@
                     <a class="nav-link " href="#"><i class="fas fa-download"></i>Descargas </a>
                     <a class="nav-link " href="#"><i class="fas fa-wallet"></i>Billetera </a>
                     <a class="nav-link " href="#"><i class="fas fa-clipboard-check"></i> Exchange </a>
-                    <a class="nav-link " href="/pages/login.html"><i class="fas fa-sign-in-alt"></i> Regist../Iniciar </a>
+                    <a class="nav-link " href="/pages/login.html"><i class="fas fa-sign-in-alt"></i> Entrar</a>
                 </div>
               </nav>
         </header>
         <div class="marcoDo">
             <section class="Register_login">
-                
+                <figure>
+                    <form id="login" class='login'>
+                        <img src="/img/img/images/1_5143645411986112722.png" alt="">
+                        <label>
+                            Usuario <br>
+                            <input type="text">
+                        </label>
+                        <label>
+                            Contraseña <br>
+                            <input type="password">
+                        </label>
+                        <small style="margin-bottom: 3%;"><a href="#">He olvidado mi Contraseña</a></small>
+                        <button>Iniciar Sesión</button>
+                        <p>
+                            ¿No estas Registrado?
+                            <a href="#">Registrarse</a>
+                        </p>
+                    </form>
+                    <form id="re" class='login register'>
+                        <img src="/img/img/images/1_5143645411986112722.png" alt="">
+                        <label style="margin-top: 5%;">
+                            Correo
+                            <input type="email">
+                        </label>
+                        <label>
+                            Contraseña
+                            <input type="password">
+                        </label>
+                        <label>
+                            Confirmar contraseña
+                            <input type="password">
+                        </label>
+                        <button>Continuar</button>
+                    </form>
+                </figure>
             </section>
         </div>
     </section>
-    <script>
-
-        var mediaqueryList = window.matchMedia("(max-width: 996px)");
-        if (mediaqueryList.matches){
-            document.body.style='display:none'
-            alert('Página Web no accesible para Tablet o Móbiles')
-        }
-    </script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

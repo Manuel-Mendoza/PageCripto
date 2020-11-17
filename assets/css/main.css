@@ -315,3 +315,58 @@ footer p {
   color: grey;
   font-size: 1.3em;
 }
+
+/* Login */
+.Register_login figure {
+  display: flex;
+  justify-content: center;
+  background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5% 0%;
+}
+.Register_login figure .login {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 5% 0%;
+  border-radius: 20px;
+  background: #181818;
+}
+.Register_login figure .login button {
+  background: #DBB237;
+  padding: 2%;
+  width: 30%;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #2b2f36;
+}
+.Register_login figure .login small a {
+  text-decoration: none;
+  color: white;
+}
+.Register_login figure .login label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.Register_login figure .login label input {
+  padding: 0% 5%;
+  width: 60%;
+  height: 3em;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: #2b2f36;
+}
+.Register_login figure .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
