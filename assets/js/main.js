@@ -22,3 +22,29 @@ function change2(){
         register.style='display:none'
     }
 }
+
+function validaNumericos(event) {
+    if(event.charCode >= 48 && event.charCode <= 57){
+      return true;
+     }
+     return false;        
+}
+
+function copiar_link_ref() {
+
+    var codigoACopiar = document.getElementById('p1');
+    var seleccion = document.createRange();
+    console.log(codigoACopiar.value)
+    seleccion.selectNodeContents(codigoACopiar);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(seleccion);
+    document.execCommand('copy');
+    window.getSelection().removeRange(seleccion);
+
+    swal({
+        title: "Buen Trabajo!",
+        text: "Su Wallet a sido Copiado Correctamente!",
+        icon: "success",
+        button: "Aww yiss!",
+      });
+}

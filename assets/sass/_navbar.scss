@@ -15,8 +15,8 @@ nav{
     .navbar-nav{
         margin-left: 30px;
         display: grid;
-        grid-template: 1fr / repeat(5,1fr);
-        grid-gap: 3pc;
+        grid-template: 1fr / repeat(6,1fr);
+        grid-gap: 2pc;
 
         .nav-link{
             padding: 0px;
@@ -24,14 +24,6 @@ nav{
             font-family: $Lite;
             font-size: 1.2em;
 
-            
-            .fa-home,
-            .fa-download,
-            .fa-wallet,
-            .fa-clipboard-check,
-            .fa-sign-in-alt{
-                @include iconos
-            }
         }
         .nav-link:hover{
             text-decoration: underline;

@@ -1,0 +1,112 @@
+/* Dashboard */
+.Dashboard{
+    display: grid;
+    grid-template-columns: 17% 1fr;
+    grid-template-areas: "Navbar ."
+                         "Navbar contenido"
+                         "heroIcons contenido";
+
+    .NavBar{
+        width: 100%;
+        grid-area: Navbar;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+            background-color: #232529;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 2%;
+            padding-left: 15%;
+        }
+        a:hover{
+            background-color: $fondo_marco;
+        }
+    }
+    .hero_iconos{
+        grid-area: heroIcons;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 25%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+
+        a{
+            color: white;
+        }
+    }
+    .Contenido{
+        grid-area: contenido;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px gray;
+        border-radius: 10px;
+        h3{
+            color: $Dorado;
+        }
+        h6{
+            color: $Dorado;
+            display:flex;
+            align-items: center;
+            pre{
+                background: $fondo_marco;
+                padding: 0.4%;
+                text-align: center;
+                color: white;
+                width: 80%;
+                border-radius: 20px;
+                user-select: text;
+            }
+        }
+        hr{
+            background: white;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            .Contenido_Balances{
+                margin: 1.5%;
+                padding: 2%;
+                background: $fondo_marco;
+                border: 1px solid grey;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                
+                h6{
+                    color: $Dorado;
+                }
+                p{
+                    font-size: 2em;
+                    color:rgba($color: #181a1f, $alpha: .9);
+                }
+            }
+        }
+        button{
+            background: $fondo_marco;
+            border: 1px solid #181a1f;
+            border-radius: 10px;
+            padding: 2%;
+            color: $Dorado;
+            width: 60%;
+            margin: auto;
+            outline: none;
+        }
+        form{
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 5%;
+
+            input{
+                padding-left: 3%;
+            }
+        }
+    }
+}

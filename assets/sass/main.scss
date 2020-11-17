@@ -12,8 +12,8 @@ body{
 }
 
 /* VARIABLES */
-@import "_variables";
 @import "_mixing";
+@import "_variables";
 
 /* PAGES */
 @import "_navbar";
@@ -27,3 +27,4 @@ body{
 @import "_link";
 @import "_footer";
 @import "page/_login.scss";
+@import "page/_dashboard.scss";

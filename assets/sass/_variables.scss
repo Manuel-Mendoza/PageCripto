@@ -10,4 +10,21 @@ $Pesada:'Noto Sans', sans-serif;
 /* Colores */
 $fondo_marco: #2b2f36;
 $Blanco: #F4f4f4;
-$Dorado:#DBB237
+$Dorado:#DBB237;
+
+
+.fa-home,
+.fa-download,
+.fa-th,
+.fa-wallet,
+.fa-piggy-bank,
+.fa-shopping-cart,
+.fa-sync-alt,
+.fa-search,
+.fa-clipboard-check,
+.fa-sign-in-alt{
+    @include iconos
+}
+
+
+input[type=number] { -moz-appearance:textfield; }
