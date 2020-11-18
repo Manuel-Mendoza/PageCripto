@@ -1,9 +1,3 @@
-var mediaqueryList = window.matchMedia("(max-width: 996px)");
-if (mediaqueryList.matches) {
-    document.body.style = 'display:none'
-    alert('Página Web no accesible para Tablet o Móbiles')
-}
-
 function change() {
     const login = document.getElementById('login');
     const register = document.getElementById('register');
@@ -111,4 +105,10 @@ function sube() {
 
 if(window.location.pathname == '/' || window.location.pathname == '/pages/login.html'){
     document.body.style='overflow: hidden;';
+}
+
+var mediaqueryList = window.matchMedia("(max-width: 996px)");
+if (mediaqueryList.matches) {
+    document.body.style = 'display:none'
+    alert('Página Web no accesible para Tablet o Móbiles')
 }
