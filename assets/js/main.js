@@ -1,3 +1,24 @@
+/* Error 404 ---------------------------------------------------------------------------------------------*/
+var pageX = $(document).width();
+var pageY = $(document).height();
+var mouseY=0;
+var mouseX=0;
+
+$(document).mousemove(function( event ) {
+  //verticalAxis
+  mouseY = event.pageY;
+  yAxis = (pageY/2-mouseY)/pageY*300; 
+  //horizontalAxis
+  mouseX = event.pageX / -pageX;
+  xAxis = -mouseX * 100 - 100;
+
+  $('.box__ghost-eyes').css({ 'transform': 'translate('+ xAxis +'%,-'+ yAxis +'%)' }); 
+
+  //console.log('X: ' + xAxis);
+
+});
+/* Error 404 ---------------------------------------------------------------------------------------------*/
+
 function change() {
     const login = document.getElementById('login');
     const register = document.getElementById('register');
@@ -112,3 +133,4 @@ if (mediaqueryList.matches) {
     document.body.style = 'display:none'
     alert('Página Web no accesible para Tablet o Móbiles')
 }
+
