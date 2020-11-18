@@ -3,6 +3,9 @@
     margin: 0%;
     user-select: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: #f4f4f4;
     background: #525659;
@@ -10,7 +13,9 @@ body{
     justify-content: center;
     margin-top: 5%;
 }
-
+html,body{
+    overflow: hidden;
+}
 /* VARIABLES */
 @import "_mixing";
 @import "_variables";
@@ -28,3 +33,22 @@ body{
 @import "_footer";
 @import "page/_login.scss";
 @import "page/_dashboard.scss";
+
+.down{
+    text-decoration: none;
+    position: fixed;
+    right: 2%;
+    z-index: 5;
+    color: $Dorado;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+#up{
+bottom: 2%;
+}
+
+#up,
+.down:hover{
+    color: $Dorado;
+}

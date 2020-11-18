@@ -7,12 +7,20 @@
           user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #f4f4f4;
   background: #525659;
   display: flex;
   justify-content: center;
   margin-top: 5%;
+}
+
+html, body {
+  overflow: hidden;
 }
 
 /* VARIABLES */
@@ -52,7 +60,7 @@ nav .navbar-nav {
   margin-left: 30px;
   display: grid;
   grid-template: 1fr/repeat(6, 1fr);
-  grid-gap: 2pc;
+  width: 100%;
 }
 nav .navbar-nav .nav-link {
   padding: 0px;
@@ -493,4 +501,23 @@ footer p {
 }
 .Dashboard .Contenido form input {
   padding-left: 3%;
+}
+
+.down {
+  text-decoration: none;
+  position: fixed;
+  right: 2%;
+  z-index: 5;
+  color: #DBB237;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#up {
+  bottom: 2%;
+}
+
+#up,
+.down:hover {
+  color: #DBB237;
 }

@@ -45,6 +45,60 @@ function copiar_link_ref() {
         title: "Buen Trabajo!",
         text: "Su Wallet a sido Copiado Correctamente!",
         icon: "success",
-        button: "Aww yiss!",
+        button: "Aceptar!",
       });
+}
+
+if(window.location.hash = '#Hero'){
+    document.querySelector('#up').style='display:none'
+}
+
+function Baja(){
+    const down = document.querySelector('#down');
+    const link = window.location;
+    document.querySelector('#up').style='display:inline-block'
+
+    if(link.hash == '#Hero'){
+        down.href = '#Parte2';
+    }
+
+    if(link.hash == '#Parte2'){
+        down.href = '#Parte3';
+    }
+    if(link.hash == '#Parte3'){
+        down.href = '#Parte4';
+    }
+    if(link.hash == '#Parte4'){
+        down.href = '#Descargas';
+    }
+    if(link.hash == '#Descargas'){
+        down.href = '#Exchange';
+    }
+    if(link.hash == '#Exchange'){
+        down.href = '#Link';
+    }
+}
+
+function sube(){
+    const down = document.querySelector('#up');
+    const link = window.location;
+
+    if(link.hash == '#Parte2'){
+        down.href = '#Hero';
+    }
+    if(link.hash == '#Parte3'){
+        down.href = '#Parte2';
+    }
+    if(link.hash == '#Parte4'){
+        down.href = '#Parte3';
+    }
+    if(link.hash == '#Descargas'){
+        down.href = '#Parte4';
+    }
+    if(link.hash == '#Exchange'){
+        down.href = '#Descargas';
+    }
+    if(link.hash == '#Link'){
+        down.href = '#Exchange';
+    }
 }
