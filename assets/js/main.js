@@ -1,9 +1,9 @@
 var mediaqueryList = window.matchMedia("(max-width: 996px)");
-if (mediaqueryList.matches) {
-    location.href='/pages/404.html'
-    break
+var ubicacion_actual = window.location.pathname;
+if (mediaqueryList.matches && ubicacion_actual != "/pages/404.html") {
+    document.body.style='display:none'
+    window.location.href='/pages/404.html'
 }
-
 /* Error 404 ---------------------------------------------------------------------------------------------*/
 var pageX = $(document).width();
 var pageY = $(document).height();
@@ -133,4 +133,5 @@ function sube() {
 if(window.location.pathname == '/' || window.location.pathname == '/pages/login.html'){
     document.body.style='overflow: hidden;';
 }
+
 
