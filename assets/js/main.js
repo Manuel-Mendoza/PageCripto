@@ -130,8 +130,7 @@ if(window.location.pathname == '/' || window.location.pathname == '/pages/login.
 
 var mediaqueryList = window.matchMedia("(max-width: 996px)");
 if (mediaqueryList.matches) {
-    location.href='/pages/404.html';
     alert('Página Web no accesible para Tablet o Móbiles')
-
+    location.href='/pages/404.html';
 }
 
