@@ -109,3 +109,6 @@ function sube() {
     VerificarScroll()
 }
 
+if(window.location.pathname == '/' || window.location.pathname == '/pages/login.html'){
+    document.body.style='overflow: hidden;';
+}
