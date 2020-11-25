@@ -1,4 +1,5 @@
 <?php
+$host_url = $_SERVER['HTTP_HOST'];
 
 require_once("inc/config.php");
 
