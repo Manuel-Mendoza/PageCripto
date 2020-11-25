@@ -31,6 +31,9 @@ if (isset($_POST["botonsend"])) {
                 } else {
                     $balance_nuevo - $amountsend;
                     ActualizarBalance($balance_nuevo, $user_id);
+
+                    $TxIdReturn = SendToAddress($walletsend, $amountsendsinfeed);
+                    AbrirPesta($explorer_tx . $TxIdReturn);
                 }
             } else {
                 alerta_sw("El balance no es suficiente.", "error", "Error");

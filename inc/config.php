@@ -28,4 +28,7 @@ if ($host_url != "localhost" && $host_url != "127.0.0.1") {
 }
 
 
+$explorer_tx = "https://explorer.kmushicoin.com/tx/";
+
+
 $accesos_login = verificar_sesion();

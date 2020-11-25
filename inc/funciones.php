@@ -123,3 +123,20 @@ function ActualizarBalance($balance_nuevo, $user_id)
     $db = LoadDb();
     mysqli_query($db, "UPDATE `usuarios` SET `balance` = '$balance_nuevo' WHERE `id` = $user_id");
 }
+
+function SendToAddress($wallet, $monto)
+{
+
+    $rpc = RpcLoad();
+    $TxIdReturn = $rpc->sendtoaddress($wallet, (float)$monto);
+    return $TxIdReturn;
+}
+
+
+function AbrirPesta($url)
+{
+    echo '<script>
+            function abrirNuevoTab(url) {var win = window.open(url, "_blank");win.focus();}
+            abrirNuevoTab("' . $url . '");
+        </script>';
+}
