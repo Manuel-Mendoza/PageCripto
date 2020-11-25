@@ -486,6 +486,9 @@ footer p {
   font-size: 2em;
   color: rgba(24, 26, 31, 0.9);
 }
+.Dashboard .Contenido div .Contenido_Balances button {
+  width: 80%;
+}
 .Dashboard .Contenido button {
   background: #2b2f36;
   border: 1px solid #181a1f;
