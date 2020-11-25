@@ -18,28 +18,32 @@ if (isset($_POST["botonsend"])) {
     ) {
         $walletsend = $_POST["walletsend"];
         $amountsend = $_POST["amountsend"];
-        $amountsendsinfeed = (float) ($amountsend - 0.00010000);
+        if (is_numeric($amountsend)) {
+            $amountsendsinfeed = (float) ($amountsend - 0.00010000);
 
-        $verificar_wallet = ValidateAddress($walletsend);
-        if ($verificar_wallet) {
+            $verificar_wallet = ValidateAddress($walletsend);
+            if ($verificar_wallet) {
 
-            if ($balance_que_tengo >= $amountsendsinfeed) {
-                $balance_daemon = BalanceDaemon();
+                if ($balance_que_tengo >= $amountsendsinfeed) {
+                    $balance_daemon = BalanceDaemon();
 
-                if ($balance_daemon <= $amountsendsinfeed) {
-                    alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
+                    if ($balance_daemon <= $amountsendsinfeed) {
+                        alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
+                    } else {
+                        $balance_nuevo = $balance_que_tengo - $amountsend;
+                        ActualizarBalance($balance_nuevo, $user_id);
+
+                        $TxIdReturn = SendToAddress($walletsend, $amountsendsinfeed);
+                        AbrirPesta($explorer_tx . $TxIdReturn);
+                    }
                 } else {
-                    $balance_nuevo = $balance_que_tengo - $amountsend;
-                    ActualizarBalance($balance_nuevo, $user_id);
-
-                    $TxIdReturn = SendToAddress($walletsend, $amountsendsinfeed);
-                    AbrirPesta($explorer_tx . $TxIdReturn);
+                    alerta_sw("El balance no es suficiente.", "error", "Error");
                 }
             } else {
-                alerta_sw("El balance no es suficiente.", "error", "Error");
+                alerta_sw("La wallet no es correcta", "error", "Error");
             }
         } else {
-            alerta_sw("La wallet no es correcta", "error", "Error");
+            alerta_sw("El numero no es correcto.", "error", "Error");
         }
     }
 }
