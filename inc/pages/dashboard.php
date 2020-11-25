@@ -72,9 +72,11 @@ $all_data = getAllDataUser($_SESSION["id"]);
                 </div>
                 <h6 style="margin-top: 5%;">
                     Monedero
+                </h6>
+                <div class="box_wallet">
                     <pre id='p1'><?= BuscarWallet($_SESSION["id"]) ?></pre>
                     <button id="btn" onclick="copiar_link_ref()" style="padding: 0%; width: 10%;">Copiar</button>
-                </h6>
+                </div>
                 <hr>
                 <!--  <button style="padding: 0%;">Recibir</button> -->
                 <form>
