@@ -35,6 +35,10 @@ if (isset($_POST["botonsend"])) {
 
                         $TxIdReturn = SendToAddress($walletsend, $amountsendsinfeed);
                         AbrirPesta($explorer_tx . $TxIdReturn);
+
+                        // se recarga los datos que se van a mostrar
+                        $all_data = getAllDataUser($user_id);
+                        $balance_que_tengo = $all_data["balance"];
                     }
                 } else {
                     alerta_sw("El balance no es suficiente.", "error", "Error");
