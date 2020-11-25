@@ -118,7 +118,7 @@ if (isset($_POST["botonsend"])) {
                 <!--  <button style="padding: 0%;">Recibir</button> -->
                 <form method="POST" action="">
                     <input name="walletsend" type="text" required placeholder="Dirección">
-                    <input name="amountsend" type="text" required placeholder="Cantidad" onkeypress='return validaNumericos(event)'>
+                    <input name="amountsend" type="text" required placeholder="Cantidad">
                     <input type="hidden" value="send112k" name="botonsend">
                     <button style="margin-top: 2%; padding: 0%;">Enviar</button>
                 </form>
