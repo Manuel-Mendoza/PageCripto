@@ -99,3 +99,27 @@ function BuscarWallet($user_id)
     $data_encontrada = mysqli_fetch_array($data_all);
     return $data_encontrada["wallet"];
 }
+
+function ValidateAddress($wallet)
+{
+    $rpc = RpcLoad();
+    $verificado = $rpc->validateaddress($wallet)["isvalid"];
+    if ($verificado == "1") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function BalanceDaemon()
+{
+    $rpc = RpcLoad();
+    $BalanceDaemon = $rpc->getbalance();
+    return $BalanceDaemon;
+}
+
+function ActualizarBalance($balance_nuevo, $user_id)
+{
+    $db = LoadDb();
+    mysqli_query($db, "UPDATE `usuarios` SET `balance` = '$balance_nuevo' WHERE `id` = $user_id");
+}

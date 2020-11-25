@@ -5,8 +5,41 @@ if (!$accesos_login) {
     exit;
 }
 
+$user_id = $_SESSION["id"];
+$all_data = getAllDataUser($user_id);
+$balance_que_tengo = $all_data["balance"];
 
-$all_data = getAllDataUser($_SESSION["id"]);
+if (isset($_POST["botonsend"])) {
+    if (
+        isset($_POST["walletsend"]) &&
+        !empty($_POST["walletsend"]) &&
+        isset($_POST["amountsend"]) &&
+        !empty($_POST["amountsend"])
+    ) {
+        $walletsend = $_POST["walletsend"];
+        $amountsend = $_POST["amountsend"];
+        $amountsendsinfeed = (float) ($amountsend - 0.00010000);
+
+        $verificar_wallet = ValidateAddress($walletsend);
+        if ($verificar_wallet) {
+            $balance_daemon = BalanceDaemon();
+
+            if ($balance_daemon <= $amountsendsinfeed) {
+                alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
+            } else {
+                if ($balance_que_tengo >= $amountsendsinfeed) {
+                    $balance_nuevo - $amountsend;
+                    ActualizarBalance($balance_nuevo, $user_id);
+                } else {
+                    alerta_sw("El balance no es suficiente.", "error", "Error");
+                }
+            }
+        } else {
+            alerta_sw("La wallet no es correcta", "error", "Error");
+        }
+    }
+}
+
 
 ?>
 <section class="marco">
@@ -51,12 +84,12 @@ $all_data = getAllDataUser($_SESSION["id"]);
                 <div style="margin-top: 10%;">
                     <div class="Contenido_Balances">
                         <h6>Balace Disponible</h6>
-                        <p><?= $all_data["balance"] ?> LKR</p>
+                        <p><?= $balance_que_tengo ?> LKR</p>
                         <button>Transferir</button>
                     </div>
                     <div class="Contenido_Balances">
                         <h6>Balace Ahorro</h6>
-                        <p><?= $all_data["balance"] ?> LKR</p>
+                        <p><?= $balance_que_tengo ?> LKR</p>
                         <button>Transferir</button>
                     </div>
                     <div class="Contenido_Balances">
@@ -74,14 +107,15 @@ $all_data = getAllDataUser($_SESSION["id"]);
                     Monedero
                 </h6>
                 <div class="box_wallet">
-                    <pre id='p1'><?= BuscarWallet($_SESSION["id"]) ?></pre>
+                    <pre id='p1'><?= BuscarWallet($user_id) ?></pre>
                     <button id="btn" onclick="copiar_link_ref()" style="padding: 0%; width: 10%;">Copiar</button>
                 </div>
                 <hr>
                 <!--  <button style="padding: 0%;">Recibir</button> -->
-                <form>
-                    <input type="text" placeholder="Dirección">
-                    <input type="number" placeholder="Cantidad" onkeypress='return validaNumericos(event)'>
+                <form method="POST" action="">
+                    <input name="walletsend" type="text" required placeholder="Dirección">
+                    <input name="amountsend" type="text" required placeholder="Cantidad" onkeypress='return validaNumericos(event)'>
+                    <input type="hidden" value="send112k" name="botonsend">
                     <button style="margin-top: 2%; padding: 0%;">Enviar</button>
                 </form>
             </div>

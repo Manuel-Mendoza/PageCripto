@@ -60,11 +60,11 @@
                         <img src="/img/img/images/1_5143645411986112722.png" alt="">
                         <label>
                             Usuario <br>
-                            <input name="username" type="text">
+                            <input required name="username" type="text">
                         </label>
                         <label>
                             Contraseña <br>
-                            <input name="password" type="password">
+                            <input required name="password" type="password">
                         </label>
                         <small style="margin-bottom: 3%;"><a href="#">He olvidado mi Contraseña</a></small>
                         <button>Iniciar Sesión</button>
@@ -78,15 +78,15 @@
                         <img src="/img/img/images/1_5143645411986112722.png" alt="">
                         <label style="margin-top: 5%;">
                             Correo
-                            <input id="email" name="email" type="email">
+                            <input required id="email" name="email" type="email">
                         </label>
                         <label>
                             Contraseña
-                            <input id="password" name="password" type="password">
+                            <input required id="password" name="password" type="password">
                         </label>
                         <label>
                             Confirmar contraseña
-                            <input name="repeat-password" id="repeat-password" type="password">
+                            <input required name="repeat-password" id="repeat-password" type="password">
                         </label>
                         <button>Continuar</button>
                         <input type="hidden" value="aksjdkasd0" name="boton_register">
