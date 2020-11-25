@@ -77,7 +77,7 @@ if (isset($_POST["botonsend"])) {
             <div class="NavBar">
                 <a href="#"><i class="fas fa-wallet"></i> MONEDERO</a>
                 <a href="#"><i class="fas fa-piggy-bank"></i> AHORRO</a>
-                <a href="#"><i class="fas fa-shopping-cart"></i> SERVICIOS Y TIENDA</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> TIENDA</a>
                 <a href="#"><i class="fas fa-sync-alt"></i> INTERCAMBIO P2P</a>
             </div>
             <div class="hero_iconos">

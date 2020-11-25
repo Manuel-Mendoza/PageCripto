@@ -43,8 +43,8 @@
 
         </section>
         <section id="Parte2" class="Parte2">
-            <h1 class="h1_principal">Caracteristicas Y Técnicas</h1>
-            <h1 class="h1_secundario">Caracteristicas Y Técnicas</h1>
+            <h1 class="h1_principal">Caracteristicas Técnicas</h1>
+            <h1 class="h1_secundario">Caracteristicas Técnicas</h1>
             <figure>
                 <div>
                     <img src="img/img/Recurso6.png" alt="">
