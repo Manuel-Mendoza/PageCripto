@@ -55,15 +55,15 @@
             color: $Dorado;
             display:flex;
             align-items: center;
-        }
-        pre{
-            background: $fondo_marco;
-            padding: 0.4%;
-            text-align: center;
-            color: white;
-            width: 80%;
-            border-radius: 20px;
-            user-select: text;
+            pre{
+                background: $fondo_marco;
+                padding: 0.4%;
+                text-align: center;
+                color: white;
+                width: 80%;
+                border-radius: 20px;
+                user-select: text;
+            }
         }
         hr{
             background: white;
@@ -96,7 +96,7 @@
             border-radius: 10px;
             padding: 2%;
             color: $Dorado;
-            width: 40%;
+            width: 60%;
             margin: auto;
             outline: none;
         }
