@@ -1,26 +1,26 @@
 var mediaqueryList = window.matchMedia("(max-width: 996px)");
 var ubicacion_actual = window.location.pathname;
-if (mediaqueryList.matches && ubicacion_actual != "/pages/404.html") {
-    document.body.style='display:none'
-    window.location.href='/pages/404.html'
+if (mediaqueryList.matches && ubicacion_actual != "404") {
+    document.body.style = 'display:none'
+    window.location.href = '404'
 }
 /* Error 404 ---------------------------------------------------------------------------------------------*/
 var pageX = $(document).width();
 var pageY = $(document).height();
-var mouseY=0;
-var mouseX=0;
+var mouseY = 0;
+var mouseX = 0;
 
-$(document).mousemove(function( event ) {
-  //verticalAxis
-  mouseY = event.pageY;
-  yAxis = (pageY/2-mouseY)/pageY*300; 
-  //horizontalAxis
-  mouseX = event.pageX / -pageX;
-  xAxis = -mouseX * 100 - 100;
+$(document).mousemove(function(event) {
+    //verticalAxis
+    mouseY = event.pageY;
+    yAxis = (pageY / 2 - mouseY) / pageY * 300;
+    //horizontalAxis
+    mouseX = event.pageX / -pageX;
+    xAxis = -mouseX * 100 - 100;
 
-  $('.box__ghost-eyes').css({ 'transform': 'translate('+ xAxis +'%,-'+ yAxis +'%)' }); 
+    $('.box__ghost-eyes').css({ 'transform': 'translate(' + xAxis + '%,-' + yAxis + '%)' });
 
-  //console.log('X: ' + xAxis);
+    //console.log('X: ' + xAxis);
 
 });
 /* Error 404 ---------------------------------------------------------------------------------------------*/
@@ -34,6 +34,7 @@ function change() {
         register.style = 'display:flex'
     }
 }
+
 function change2() {
     const login = document.getElementById('login');
     const register = document.getElementById('register');
@@ -130,8 +131,6 @@ function sube() {
     VerificarScroll()
 }
 
-if(window.location.pathname == '/' || window.location.pathname == '/pages/login.html'){
-    document.body.style='overflow: hidden;';
+if (window.location.pathname == '/' || window.location.pathname == 'login') {
+    document.body.style = 'overflow: hidden;';
 }
-
-
