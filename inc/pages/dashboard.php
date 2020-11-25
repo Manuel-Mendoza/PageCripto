@@ -22,17 +22,18 @@ if (isset($_POST["botonsend"])) {
 
         $verificar_wallet = ValidateAddress($walletsend);
         if ($verificar_wallet) {
-            $balance_daemon = BalanceDaemon();
 
-            if ($balance_daemon <= $amountsendsinfeed) {
-                alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
-            } else {
-                if ($balance_que_tengo >= $amountsendsinfeed) {
+            if ($balance_que_tengo >= $amountsendsinfeed) {
+                $balance_daemon = BalanceDaemon();
+
+                if ($balance_daemon <= $amountsendsinfeed) {
+                    alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
+                } else {
                     $balance_nuevo - $amountsend;
                     ActualizarBalance($balance_nuevo, $user_id);
-                } else {
-                    alerta_sw("El balance no es suficiente.", "error", "Error");
                 }
+            } else {
+                alerta_sw("El balance no es suficiente.", "error", "Error");
             }
         } else {
             alerta_sw("La wallet no es correcta", "error", "Error");
