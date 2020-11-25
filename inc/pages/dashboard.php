@@ -29,7 +29,7 @@ if (isset($_POST["botonsend"])) {
                 if ($balance_daemon <= $amountsendsinfeed) {
                     alerta_sw("El balance en el DAEMON no es suficiente. Contacta a un admin urgente.", "error", "Error");
                 } else {
-                    $balance_nuevo - $amountsend;
+                    $balance_nuevo = $balance_que_tengo - $amountsend;
                     ActualizarBalance($balance_nuevo, $user_id);
 
                     $TxIdReturn = SendToAddress($walletsend, $amountsendsinfeed);
