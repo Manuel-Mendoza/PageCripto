@@ -13,11 +13,11 @@
                 </a>
             </div>
             <div class="navbar-nav">
-                <a class="nav-link " href="/"><i class="fas fa-home"></i> Inicio </a>
-                <a class="nav-link " href="#"><i class="fas fa-download"></i> Descargas </a>
-                <a class="nav-link " href="#"><i class="fas fa-wallet"></i> Billetera </a>
-                <a class="nav-link " href="#"><i class="fas fa-clipboard-check"></i> Exchange </a>
-                <a class="nav-link " href="login"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+                <a class="nav-link " href="/">Inicio </a>
+                <a class="nav-link " href="#">Descargas </a>
+                <a class="nav-link " href="#">Billetera </a>
+                <a class="nav-link " href="#">Exchange </a>
+                <a class="nav-link " href="login">Entrar</a>
             </div>
         </nav>
     </header>
