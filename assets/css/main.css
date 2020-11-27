@@ -166,9 +166,9 @@ nav .navbar-nav .nav-link:hover {
   height: 110vh;
   border-top: none;
   border-radius: 0% 0% 100% 100%;
-  background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+  /* background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,9 +339,9 @@ footer p {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
+  /* background: url("https://i.pinimg.com/originals/e0/33/bf/e033bfabd64ae5ad615a6867a49eca3b.jpg") no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   padding: 5% 0%;
 }
 .Register_login figure .login {
