@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="hero_img">
-                <img src="img/img/im Vert. FN.png" alt=" ">
+                <img src="img/img/inicio.png" alt=" ">
             </div>
 
         </section>
@@ -59,21 +59,21 @@
             <div class="parte3_contenido">
                 <article class="article_one">
                     <h3>BLOCKCHAIN DESCENTRALIZADA</h3>
-                    <p>Con LKRCOIN la libertad financiera más que un ideal es una realidad,
-                        en nuestracadena de bloque no hay un ente central que controle tus fondos,
-                        solo tú eres responsable de estos, tu decides que hacer y cuando hacerlo. </p>
+                    <p>Con LKRcoin la libertan financiera más que un ideal es una realidad, 
+                        en la cabena de bloques de LKR no existe un ente central que controle tus fondos, 
+                        tú eres responsable de estos, solo tú decides que hacer con estos y cuando hacerlo. </p>
                 </article>
                 <article class="article_two">
                     <h3>BILLETERA MULTIPLATAFORMA</h3>
-                    <p>Cualquiera que sea tu dispositivo, lleva a LKR siempre contigo.La billetera LKRCOIN
-                        está disponible en sus versiones para ordenadoresMac y con sistema operativo Windows,
-                        además de móviles Android. </p>
+                    <p>Cualquiera que sea tu dispositivo, lleva tus monedas siempre contigo.
+                        La billetera LKRcoin está disponible en viersiones para ordenadores con sistema operativo Windows, 
+                        Linux, Ubuntu y Mac, además de móviles Android. </p>
                 </article>
                 <article class="article_tres">
-                    <h3>ROI ASEGURADO</h3>
-                    <p>Olvidate de los nulos rendimientos y procesos burócratas que ofrecen los
-                        bancoscentralizados por guardar tu dinero. LKRCOIN ofrece un interés compuesto
-                        anualdel 100% solo por mantener tus criptomonedas en su wallet LKR.</p>
+                    <h3>RENTABILIDAD ASEGURADA</h3>
+                    <p>Olvidate de los nulos rendimientos y procesos burocráticos que ofrecen los bancos centralizados 
+                        por guardar tu dinero.LKRcoin ofrece un interés compuesto anual de 100% solo por
+                        mantener tus criptomonedas en la wallet LKR.</p>
                 </article>
             </div>
         </section>
@@ -81,7 +81,7 @@
             <h1 class="h1_principal">Minería <strong>PoS</strong></h1>
             <h1 class="h1_secundario">Minería <strong>PoS</strong></h1>
             <div class="_img">
-                <img src="/img/Web_wallet.jpg" alt="">
+                <img src="/img/img/mineria-pos.png" alt="">
             </div>
         </section>
 
@@ -92,29 +92,29 @@
             </div>
             <div class="_Descargas_app">
                 <a href="#">
-                    <i class="fab fa-apple"></i>
+                    <img src="/img/img/mac.png" alt="">
                     <p>Apple</p>
                 </a>
                 <a href="#">
-                    <i class="fab fa-windows"></i>
+                    <img src="/img/img/windows.png" alt="">
                     <p>Windows</p>
                 </a>
                 <a href="#">
-                    <i class="fab fa-ubuntu"></i>
+                    <img src="/img/img/ubuntu.png" alt="">
                     <p>Ubuntu</p>
                 </a>
                 <a href="#">
-                    <i class="fab fa-android"></i>
+                    <img src="/img/img/android.png" alt="">
                     <p>Android</p>
                 </a>
             </div>
             <div class="_Descargas_app">
                 <a href="#">
-                    <i class="fas fa-laptop"></i>
+                    <img src="/img/img/wallet-web.png" alt="">
                     <p>Web Wallet</p>
                 </a>
                 <a href="#">
-                    <i class="fas fa-cubes"></i>
+                    <img src="/img/img/blockchain.png" alt="">
                     <p>Blockchain LKRCOIN</p>
                 </a>
             </div>
@@ -127,9 +127,9 @@
             </div>
 
             <div class="_exchange_square">
-                <a href="#"><img src="/img/img/Recurso.svg" alt=""></a>
-                <a href="#"><img src="/img/img/Recurso.svg" alt=""></a>
-                <a href="#"><img src="/img/img/Recurso.svg" alt=""></a>
+                <a href="#"><img src="/img/img/bololex.png" alt=""></a>
+                <a href="#"><img src="/img/img/crex.png" alt=""></a>
+                <a href="#"><img src="/img/img/erex.png" alt=""></a>
             </div>
 
         </section>

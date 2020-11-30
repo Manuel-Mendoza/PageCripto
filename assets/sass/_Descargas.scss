@@ -6,7 +6,7 @@
     height: 100vh;
     
     ._Descargas_app{
-        margin-top: 5%;
+        margin-top: 10%;
         display: flex;
         justify-content: space-evenly;
 
@@ -35,6 +35,9 @@
                 margin-bottom: 5%;
                 color: $Dorado;
                 font-size: 8em;
+            }
+            img{
+                margin-bottom: 5%;
             }
         }
     }

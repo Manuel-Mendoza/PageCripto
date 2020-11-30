@@ -5,8 +5,9 @@
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-areas: ". . one one ."
-                             ". two two . ."
+                             ". . . two two"
                              ". . tres tres .";
+        height: 80vh;
 
         article{
             margin-top: 5%;

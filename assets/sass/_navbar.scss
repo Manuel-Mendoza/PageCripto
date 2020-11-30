@@ -1,6 +1,8 @@
 /* NavBar */
+header{
+    width: 90%;
+}
 nav{
-    
     .Logo{
         a{
             color: $Blanco;
@@ -13,7 +15,7 @@ nav{
         }
     }
     .navbar-nav{
-        margin-left: 30px;
+        margin-left: 15%;
         display: grid;
         grid-template: 1fr / repeat(6,1fr);
         width: 100%;

@@ -131,6 +131,6 @@ function sube() {
     VerificarScroll()
 }
 
-if (window.location.pathname == '/' || window.location.pathname == 'login') {
+/* if (window.location.pathname == '/' || window.location.pathname == 'login') {
     document.body.style = 'overflow: hidden;';
-}
+} */
