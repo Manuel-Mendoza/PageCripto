@@ -1,5 +1,3 @@
-var mediaqueryList = window.matchMedia("(max-width: 996px)");
-
 /* Error 404 ---------------------------------------------------------------------------------------------*/
 var pageX = $(document).width();
 var pageY = $(document).height();
