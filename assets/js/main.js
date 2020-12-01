@@ -1,9 +1,3 @@
-var mediaqueryList = window.matchMedia("(max-width: 996px)");
-var ubicacion_actual = window.location.pathname;
-if (mediaqueryList.matches && ubicacion_actual != "404") {
-    document.body.style = 'display:none'
-    window.location.href = '404'
-}
 /* Error 404 ---------------------------------------------------------------------------------------------*/
 var pageX = $(document).width();
 var pageY = $(document).height();
