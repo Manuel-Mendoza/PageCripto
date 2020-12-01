@@ -6,7 +6,7 @@
     height: 100vh;
     
     ._Descargas_app{
-        margin-top: 10%;
+        margin-top: 5%;
         display: flex;
         justify-content: space-evenly;
 
@@ -31,13 +31,9 @@
             p:last-child{
                 width: 14em;
             }
-            i{
-                margin-bottom: 5%;
-                color: $Dorado;
-                font-size: 8em;
-            }
             img{
                 margin-bottom: 5%;
+                width: 35%;
             }
         }
     }

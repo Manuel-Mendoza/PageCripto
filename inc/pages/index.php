@@ -25,7 +25,7 @@
         <section id="Hero" class="Hero">
             <div class="hero_txt">
                 <h1>Criptomoneda Descentralizada</h1>
-                <p>Seguridad, Eficiencia y Rendimiento con
+                <p>Seguridad, Eficiencia y Rendimiento <br> con
                     minería Proof of Stake</p>
 
                 <input type="button" value="Hacer Stake">
@@ -147,6 +147,9 @@
                 </a>
                 <a href="#" title="CoinCodex">
                     <img src="https://coincodex.com/en/resources/images//static/media/cc-logo-1.png" alt="">
+                </a>
+                <a href="#" title="CoinMarketCap">
+                    <img src="/img/img/cmc.png" alt="">
                 </a>
             </div>
         </section>

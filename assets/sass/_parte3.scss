@@ -2,10 +2,11 @@
 .parte3{
     .parte3_contenido{
         background: url('/img/img/Rectangulos.png') no-repeat;
+        background-size: contain;
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-areas: ". . one one ."
-                             ". . . two two"
+                             ". . two two ."
                              ". . tres tres .";
         height: 80vh;
 
